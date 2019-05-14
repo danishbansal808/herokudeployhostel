@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style>
+    table, th, td {
+    border: 1px solid black;
+}
+</style>
+<script>
+        function enableButton2() {
+            document.getElementById("completebtn").disabled = false;
+        }
+    </script>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Block</th>
+      <th>Room</th>
+      <th>Complaint</th>
+      <th>Description</th>
+      <th>Recieved</th>
+      <th>Completed</th>
+    </tr>
+    <%datas.forEach(function(data){%>
+    <tr>
+      <td>
+        <%=data.Name%>
+      </td>
+      <td>
+        <%=data.Block%>
+      </td>
+      <td>
+        <%=data.Room%>
+      </td>
+      <td>
+        <%=data.Complaints%>
+      </td>
+      <td>
+        <%=data.Description%>
+      </td>
+      <td>
+        <button type="button" id="recivebtn[]" name="btnn" method="post" action="./../assets/managecomplaints/read.js" onclick="enableButton2()">Mark Recieve</button>
+      </td>
+      <td>
+        <button type="button" id="completebtn" name="btnn1" method="post" action="./../assets/managecomplaints/read.js" disabled>Mark Completed</button>
+      </td>
+    </tr>
+    <%})%>
+  </table>
+  <script src="./../assets/js/jquery.js"></script>
+  <script src="./../assets/managecomplaints/read.js"></script>
+</body>
+
+</html>
