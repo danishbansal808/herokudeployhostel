@@ -26,7 +26,7 @@
     "express-validator": "^5.3.0",
     "fs": "0.0.1-security",
     "heroku": "^7.18.9",
-    "mongoose": "^5.3.4",
+    "mongoose": "^5.7.5",
     "mysql": "^2.16.0",
     "nodemailer": "^4.6.8",
     "password-validator": "^4.1.1"
