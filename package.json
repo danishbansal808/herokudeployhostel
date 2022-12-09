@@ -19,7 +19,7 @@
     "crypto-random-string": "^1.0.0",
     "date-and-time": "^0.6.2",
     "ejs": "^2.6.1",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "express-fileupload": "^1.0.0",
     "express-session": "^1.15.6",
     "express-sessions": "^1.0.6",
